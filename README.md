@@ -2,7 +2,7 @@
 
 ## Hackathon Description:
 
-Sentiment Analysis for Steam Reviews
+Sentiment Analysis for Steam Reviews (conducted by Analytics Vidhya)
 Steam is a video game digital distribution service with a vast community of gamers globally. A lot of gamers write reviews at the game page and have an option of choosing whether they would recommend this game to others or not. However, determining this sentiment automatically from text can help Steam to automatically tag such reviews extracted from other forums across the internet and can help them better judge the popularity of games.
 
 Given the review text with user recommendation and other information related to each game for 64 game titles, the task is to predict whether the reviewer recommended the game titles available in the test set on the basis of review text and other information.
@@ -33,3 +33,7 @@ Game overview information for both train and test are available in single file g
 ### samplesubmission.csv
 1. **review_id** : Unique ID for each review
 2. **user_suggestion** : User will Recommend or Not Recommend the game
+
+
+## Evaluation Metric
+Submissions are evaluated on `binary F1` score between the predicted and observed user suggestion for the reviews in the test set.
